@@ -2,7 +2,7 @@ body
 {
     background-color: white;
     text-align: left;
-    font-family: "Klee One", cursive;;
+    font-family: "Klee One", cursive;
 }
 
 header
@@ -10,10 +10,22 @@ header
     background-color: #4987c5;
     color: white;  
     padding: 10px;
-    justify-content: space-around;
     margin-right: 90%;
     flex-direction: column;
+    min-height: 100vh;
+    display: grid;
+    height: 100%;
 
+
+}
+
+.container
+{
+    margin-left: 13%;
+    flex-direction: column;
+    width: auto;
+    position: absolute;
+    top: 0%;
 }
 
 .navbar a
@@ -42,21 +54,4 @@ header
 .navbar a:hover::before 
 {
     width: 100%;
-}
-
-.container
-{
-    justify-content:space-around;
-    display: flex;
-    gap: 20px;
-    font-size: 13px;
-    flex-direction: column;
-}
-
-.btn1
-{
-    background-color: #4987c5;
-    width: 40px;
-    border-radius: 5px;
-    text-align: center;
 }
