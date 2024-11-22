@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santiago Vela Beltrán</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Indie+Flower&family=Klee+One&family=Nosifer&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&family=Tiny5&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+    <a href="#" class="btn1" id="tab1">Inicio</a>
+    <a href="#" class="btn2" id="tab2">Informacion</a>
+    <a href="#" class="btn3" id="tab3">Formulario</a>
+    </nav>
+  </header>
+
+  <div class="container">
+  <div class="Inicio">Inicio</div>
+  <div>Hola mi nombre es Santiago Vela Beltran y esta es la practica evaluable de HLC</div>
+
+  <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/0*XFKvzn30CglSpb3o" width="300" height="200">
+
+  <div class="Informacion">Informacion</div>
+  <div>El examen de HLC consta de las siguientes partes
+    <ul>
+      <li>Un menu lateral</li>
+      <li>Un formulario</li>
+      <li>Varios elementos HTML como:</li>
+      <ul>
+          <li>Titulos</li>
+          <li>Imagenes</li>
+          <li>Listas</li>
+      </ul>
+    <p>Algunos datos importante sobre la practica son:</p>
+  <table border="1">
+    <tr style="background-color: rgb(4, 153, 103);">
+      <th  style="color: white;">Forma de entrega</th>
+      <th  style="color: white;">Tiempo</th>
+      <th  style="color: white;">Calificacion</th>
+    </tr>
+    <tbody>
+      <tr>
+        <td>GitHub y GitHub Pages</td>
+        <td>2 horas</td>
+        <td>Numerica</td>
+      </tr>
+    </tbody>
+  </table><br>
+  </div>
+
+  <div class="btn3" id="tab3">Formulario</div>
+  <div class="containerform">
+    <form class="was-validated">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Nombre</label><br>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailName" placeholder="Ingresa tu nombre">
+      </div><br>
+      <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label><br>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu correo" required>
+        </div><br>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Mensaje</label><br>
+          <textarea class="form-control" id="exampleInputEmail1" aria-describedby="emailMensaje" placeholder="Te odio flexbox" required></textarea>
+        </div><br>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+  
+  <script>
+          function showTabById(tabId) {
+    const tabs = document.querySelectorAll('.tab');
+    tabs.forEach(tab => {
+      tab.classList.toggle('active', tab.id === tabId);
+    });
+  }
+  document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.menu button');
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const tabId = button.id.replace('btn', 'tab');
+        showTabById(tabId);
+      });
+    });
+  });
+  </script>
+
+</body>
+</html>

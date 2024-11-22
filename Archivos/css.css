@@ -1,0 +1,62 @@
+body
+{
+    background-color: white;
+    text-align: left;
+    font-family: "Klee One", cursive;;
+}
+
+header
+{
+    background-color: #4987c5;
+    color: white;  
+    padding: 10px;
+    justify-content: space-around;
+    margin-right: 90%;
+    flex-direction: column;
+
+}
+
+.navbar a
+{
+    position: relative;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 70px;
+    
+}
+
+.navbar a::before
+{
+    background-color: rgb(6, 179, 248);
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 30px;
+}
+
+.navbar a:hover::before 
+{
+    width: 100%;
+}
+
+.container
+{
+    justify-content:space-around;
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+    flex-direction: column;
+}
+
+.btn1
+{
+    background-color: #4987c5;
+    width: 40px;
+    border-radius: 5px;
+    text-align: center;
+}
