@@ -1,57 +1,86 @@
-body
-{
-    background-color: white;
-    text-align: left;
-    font-family: "Klee One", cursive;
+body {
+    margin: 0;
 }
 
-header
-{
-    background-color: #4987c5;
-    color: white;  
-    padding: 10px;
-    margin-right: 90%;
-    flex-direction: column;
+* {
+    font-family: "Klee One", serif;
+}
+
+.container {
+    display: flex;
     min-height: 100vh;
-    display: grid;
-    height: 100%;
-
-
 }
 
-.container
-{
-    margin-left: 13%;
+.menu {
+    background-color: #4476a8;
+    width: 15%;
+    display: flex;
     flex-direction: column;
-    width: auto;
-    position: absolute;
-    top: 0%;
+    align-items: center;
+    padding-top: 2%;
 }
 
-.navbar a
-{
-    position: relative;
-    font-size: 16px;
+.menu button {
+    width: 50%;
+    background-color: #4987c5;
     color: white;
-    text-decoration: none;
-    font-weight: 700;
-    margin-left: 70px;
-    
+    border: 0;
+    border-radius: 5px;
+    padding: 5% 10%;
+    margin: 5%;
+    cursor: pointer;
+    transition: all ease 0.5s;
 }
 
-.navbar a::before
-{
-    background-color: rgb(6, 179, 248);
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    border-radius: 30px;
+span {
+    background-color: #d3f8f7;
 }
 
-.navbar a:hover::before 
-{
-    width: 100%;
+.menu button:hover {
+    background-color: #1abc9c;
+}
+
+.tab-content {
+    background-color: #f4f4f4;
+    width: 85%;
+}
+
+.tab {
+    display: none;
+    margin-left: 2%;
+}
+
+.tab.active {
+    display: block;
+}
+
+th {
+    background-color: #1abc9c;
+    color: white;
+}
+
+form {
+    background-color: white; 
+    padding: 2%;  
+    margin-right: 40px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 10px grey;
+}
+
+form input, textarea {
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 0.2%;
+}
+
+.form-btn {
+    width: 10%;
 }
